@@ -43,7 +43,7 @@ public class BaseTest {
 		data = new Properties();
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("E:\\Java programs\\Madisonsite\\src\\test\\resources\\data.properties");
+			fis = new FileInputStream("C:\\Users\\myi35000\\git\\MadisonSite\\Madisonsite\\src\\test\\resources\\data.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

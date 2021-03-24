@@ -11,15 +11,15 @@ public class Constants {
 	
 	public static final String URL = "http://demo-store.seleniumacademy.com/";
 	
-	public static final String SCREENSHOT_FAIL = "E:\\Java programs\\Madisonsite\\src\\test\\resources\\Screenshots\\FailedTests";
+	public static final String SCREENSHOT_FAIL = "C:\\Users\\myi35000\\git\\MadisonSite\\Madisonsite\\src\\test\\resources\\Screenshots\\FailedTests";
 	
-	public static final String SCREENSHOT_PASS = "E:\\Java programs\\Madisonsite\\src\\test\\resources\\Screenshots\\PassedTests";
+	public static final String SCREENSHOT_PASS = "C:\\Users\\myi35000\\git\\MadisonSite\\Madisonsite\\src\\test\\resources\\Screenshots\\PassedTests";
 	
-	public static final String EXCELFILE_PATH = "E:\\Java programs\\Madisonsite\\src\\test\\resources\\Madison.xlsx";
+	public static final String EXCELFILE_PATH = "C:\\Users\\myi35000\\git\\MadisonSite\\Madisonsite\\src\\test\\resources\\Madison.xlsx";
 	
-	public static final String PROPERTIES_PATH = "E:\\Java programs\\Madisonsite\\src\\test\\resources\\data.properties";
+	public static final String PROPERTIES_PATH = "C:\\Users\\myi35000\\git\\MadisonSite\\Madisonsite\\src\\test\\resources\\data.properties";
 	
-	public static final String EXTENTREPORT_PATH = "E:\\Java programs\\Madisonsite\\src\\test\\resources\\ExtentReports";
+	public static final String EXTENTREPORT_PATH = "C:\\Users\\myi35000\\git\\MadisonSite\\Madisonsite\\src\\test\\resources\\ExtentReports";
 	
 	public static final String REGISTRATION_SHEETNAME="Registration";
 	
