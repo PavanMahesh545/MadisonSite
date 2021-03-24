@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="browser" value="chrome" />
+	<listeners>
+		
+			<listener class-name="com.htc.madisonsite.utilites.Listeners" />
+			
+	</listeners>
+	<test name="Test" thread-count="5">
+		<classes>
+			           <!-- <class name="com.htc.madisonsite.tests.RegistrationTest"></class>   -->
+		<!-- 	              <class name="com.htc.madisonsite.tests.LoginTest"></class>   -->
+			        <class name="com.htc.madisonsite.tests.ProductPurchaseTest">    
+			</class>  
+		</classes>
+	</test>
+
+</suite>

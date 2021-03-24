@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-24T20:05:45 IST" name="Suite" finished-at="2021-03-24T20:06:52 IST" duration-ms="67143">
+    <groups>
+    </groups>
+    <test started-at="2021-03-24T20:05:45 IST" name="Test" finished-at="2021-03-24T20:06:52 IST" duration-ms="67143">
+      <class name="com.htc.madison.tests.ProductPurchaseTest">
+        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@70325e14]" started-at="2021-03-24T20:05:30 IST" name="start" finished-at="2021-03-24T20:05:45 IST" duration-ms="14543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@70325e14]" started-at="2021-03-24T20:05:45 IST" name="browserSetup" finished-at="2021-03-24T20:05:45 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@70325e14]" started-at="2021-03-24T20:05:46 IST" name="Valid_And_Invalid_Login" data-provider="Madison" finished-at="2021-03-24T20:06:01 IST" duration-ms="14475" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=test123, emailid=test09@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='block-content']//ul//li[@class='current']//a//strong"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BTIVP0I', ip: '192.168.43.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\myi35000\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd96ca00358f26abdc52023807b0ea3c
+*** Element info: {Using=xpath, value=//div[@class='block-content']//ul//li[@class='current']//a//strong}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='block-content']//ul//li[@class='current']//a//strong"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BTIVP0I', ip: '192.168.43.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\myi35000\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd96ca00358f26abdc52023807b0ea3c
+*** Element info: {Using=xpath, value=//div[@class='block-content']//ul//li[@class='current']//a//strong}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+at com.htc.madison.utilites.Utility.waitToBeVisibile(Utility.java:29)
+at com.htc.madison.pages.HomePage.Home_Page(HomePage.java:28)
+at com.htc.madison.tests.ProductPurchaseTest.Valid_And_Invalid_Login(ProductPurchaseTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_And_Invalid_Login -->
+        <test-method is-config="true" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@70325e14]" started-at="2021-03-24T20:06:04 IST" name="doLogout" finished-at="2021-03-24T20:06:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_And_Invalid_Login status=FAILURE method=ProductPurchaseTest.Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@70325e14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+        <test-method signature="Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@70325e14]" started-at="2021-03-24T20:06:04 IST" name="Valid_And_Invalid_Login" data-provider="Madison" finished-at="2021-03-24T20:06:47 IST" duration-ms="42380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=pavan989, emailid=pavan.mahesh1234@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_And_Invalid_Login -->
+        <test-method is-config="true" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@70325e14]" started-at="2021-03-24T20:06:50 IST" name="doLogout" finished-at="2021-03-24T20:06:52 IST" duration-ms="1982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_And_Invalid_Login status=SUCCESS method=ProductPurchaseTest.Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@70325e14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+      </class> <!-- com.htc.madison.tests.ProductPurchaseTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
