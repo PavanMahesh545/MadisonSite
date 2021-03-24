@@ -5,17 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class OrderConfirmationPage extends BasePage  {
+public class OrderConfirmation extends BasePage  {
 
 	@FindBy(xpath="//div[@class='page-title']")
 	private WebElement chechouttitle;
 	
-	public OrderConfirmationPage(WebDriver driver) {
+	public OrderConfirmation(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}
 	
-	public String assert_chechouttitle() {
+	public String getConfirmMessage() {
 		return chechouttitle.getText();
 	}
 }

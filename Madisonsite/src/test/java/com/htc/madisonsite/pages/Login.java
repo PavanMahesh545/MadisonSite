@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import com.htc.madisonsite.utilites.Utility;
 
-public class LoginPage extends BasePage {
+public class Login extends BasePage {
 
 	@FindBy(xpath = "(//span[@class='label'])[3]")
 	private WebElement accountBy;
@@ -26,7 +26,7 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//div[@class='welcome-msg']//p[@class='hello']//strong")
 	private WebElement assertcheckBy;
 
-	public LoginPage(WebDriver driver) {
+	public Login(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}

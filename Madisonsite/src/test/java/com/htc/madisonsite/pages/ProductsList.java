@@ -8,12 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class ProductsListPage extends BasePage {
+public class ProductsList extends BasePage {
 	
 	@FindBy(xpath = "(//a[@title='Suede Loafer, Navy'])[2]")
 	private WebElement productBy;
 
-	public ProductsListPage(WebDriver driver) {
+	public ProductsList(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}

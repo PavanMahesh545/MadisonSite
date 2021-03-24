@@ -12,7 +12,7 @@ import com.htc.madisonsite.utilites.Utility;
 import org.openqa.selenium.support.FindBy;
 
 
-public class BillingPage extends BasePage {
+public class Billing extends BasePage {
 	@FindBy(xpath = "//input[@id='newsletter']")
 	private WebElement newsletterBy;
 	@FindBy(xpath = "(//button[@class='button'])[5]")
@@ -42,7 +42,7 @@ public class BillingPage extends BasePage {
 
 	
 	
-	public BillingPage(WebDriver driver) {
+	public Billing(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}

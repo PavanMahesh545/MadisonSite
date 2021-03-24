@@ -14,9 +14,8 @@ public class ProductPurchaseTest extends BaseTest {
 	@Parameters("SheetName")
 	public void Valid_And_Invalid_Login(Map<String, String> mapData) throws IOException, InterruptedException {
 		login.Login_To_Page(mapData.get("emailid"), mapData.get("password"));
-		//Assert.assertEquals(homepage.assert_login(), "Hello, srikar sai indraganti!");
 
-		homepage.Home_Page(data.getProperty("searchproduct"));
+	     homepage.Home_Page(data.getProperty("searchproduct"));
 
 		productlist.selectproductBy();
 
@@ -29,7 +28,7 @@ public class ProductPurchaseTest extends BaseTest {
 				data.getProperty("city"), data.getProperty("quantity"), data.getProperty("pincode"),
 				data.getProperty("mobilenumber"));
 
-		Assert.assertEquals(confirm.assert_chechouttitle(), "CHECKOUT");
+		Assert.assertEquals(confirm.getConfirmMessage(), "YOUR ORDER HAS BEEN RECEIVED.");
 		System.out.println("Order has Placed Succesfully");
 	}
 }

@@ -12,7 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import com.htc.madisonsite.utilites.Utility;
 
 
-public class RegistrationPage extends BasePage {
+public class Registration extends BasePage {
 	
 	@FindBy(xpath = "(//span[@class='label'])[3]")
 	private WebElement accountBy;
@@ -35,7 +35,7 @@ public class RegistrationPage extends BasePage {
 	@FindBy(xpath = "//span[contains(text(),'Thank you for registering with Madison Island.')]")
 	private WebElement assertcheckBy;
 
-	public RegistrationPage(WebDriver driver) {
+	public Registration(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}
@@ -59,7 +59,7 @@ public class RegistrationPage extends BasePage {
 
 	}
 
-	public String assertcheckBy() {
+	public String getRegistrationSuccessfulMessage() {
 		return assertcheckBy.getText();
 	}
 

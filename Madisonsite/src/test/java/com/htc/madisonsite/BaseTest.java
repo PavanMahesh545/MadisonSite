@@ -15,24 +15,24 @@ import org.testng.annotations.Parameters;
 
 import com.htc.madisonsite.constants.Constants;
 import com.htc.madisonsite.pages.BasePage;
-import com.htc.madisonsite.pages.BillingPage;
-import com.htc.madisonsite.pages.CartPage;
-import com.htc.madisonsite.pages.HomePage;
-import com.htc.madisonsite.pages.LoginPage;
-import com.htc.madisonsite.pages.OrderConfirmationPage;
-import com.htc.madisonsite.pages.ProductsListPage;
-import com.htc.madisonsite.pages.ShoppingCartPage;
+import com.htc.madisonsite.pages.Billing;
+import com.htc.madisonsite.pages.Cart;
+import com.htc.madisonsite.pages.Home;
+import com.htc.madisonsite.pages.Login;
+import com.htc.madisonsite.pages.OrderConfirmation;
+import com.htc.madisonsite.pages.ProductsList;
+import com.htc.madisonsite.pages.ShoppingCart;
 import com.htc.madisonsite.utilites.Screenshot;
 
 public class BaseTest {
 	protected WebDriver driver=null;
-	protected LoginPage login = null;
-	protected HomePage homepage = null;
-	protected ProductsListPage productlist = null;
-	protected CartPage cartpage = null;
-	protected ShoppingCartPage shopping = null;
-	protected BillingPage billing = null;
-	protected OrderConfirmationPage confirm = null;
+	protected Login login = null;
+	protected Home homepage = null;
+	protected ProductsList productlist = null;
+	protected Cart cartpage = null;
+	protected ShoppingCart shopping = null;
+	protected Billing billing = null;
+	protected OrderConfirmation confirm = null;
 	protected BasePage bp = null;
    
 	protected Screenshot screenshot = null;
@@ -68,13 +68,13 @@ public class BaseTest {
 	}
 	@BeforeClass
 	public void browserSetup() {
-		login = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		productlist = new ProductsListPage(driver);
-		cartpage = new CartPage(driver);
-		shopping = new ShoppingCartPage(driver);
-		billing = new BillingPage(driver);
-		confirm = new OrderConfirmationPage(driver);
+		login = new Login(driver);
+		homepage = new Home(driver);
+		productlist = new ProductsList(driver);
+		cartpage = new Cart(driver);
+		shopping = new ShoppingCart(driver);
+		billing = new Billing(driver);
+		confirm = new OrderConfirmation(driver);
 		bp = new BasePage(driver);
 		
 	}

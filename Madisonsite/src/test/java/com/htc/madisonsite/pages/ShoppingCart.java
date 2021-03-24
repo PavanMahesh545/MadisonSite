@@ -13,7 +13,7 @@ import com.htc.madisonsite.utilites.Utility;
 
 
 
-public class ShoppingCartPage extends BasePage {
+public class ShoppingCart extends BasePage {
 	
 	@FindBy(xpath = "//select[@id='country']")
 	private WebElement countryBy;
@@ -26,7 +26,7 @@ public class ShoppingCartPage extends BasePage {
 	@FindBy(xpath = "(//button[@class='button btn-proceed-checkout btn-checkout'])[2]")
 	private WebElement checkoutbuttonBy;
 
-	public ShoppingCartPage(WebDriver driver) {
+	public ShoppingCart(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}

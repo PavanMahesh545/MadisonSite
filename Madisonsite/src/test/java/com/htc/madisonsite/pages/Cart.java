@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CartPage extends BasePage {
+public class Cart extends BasePage {
 	@FindBy(xpath = "(//span[@class='swatch-label'])[1]")
 	private WebElement colourBy;
 	@FindBy(xpath = "//*[@id=\"swatch97\"]/span[1]")
@@ -18,7 +18,7 @@ public class CartPage extends BasePage {
 	@FindBy(xpath = "(//button[@class='button btn-cart'])[2]")
 	private WebElement addtocartBy;
 
-	public CartPage(WebDriver driver) {
+	public Cart(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}

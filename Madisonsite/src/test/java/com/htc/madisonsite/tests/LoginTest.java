@@ -14,6 +14,6 @@ public class LoginTest extends BaseTest {
 	@Parameters("SheetName")
 	public void Valid_And_Invalid_Login(Map<String, String> mapData) throws IOException, InterruptedException {
 		login.Login_To_Page(mapData.get("emailid"), mapData.get("password"));
-		Assert.assertEquals(homepage.assert_login(), "Hello, Indraganti sai srikar!");
+		Assert.assertEquals(homepage.getWelcomeMessage(), "Hello, Pavan Mahesh!");
 }
 	}

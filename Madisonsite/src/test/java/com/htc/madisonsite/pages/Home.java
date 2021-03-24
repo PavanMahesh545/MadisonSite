@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import com.htc.madisonsite.utilites.Utility;
 
-public class HomePage extends BasePage{
+public class Home extends BasePage{
 	@FindBy(xpath = "//div[@class='block-content']//ul//li[@class='current']//a//strong")
 	private WebElement dashboardBy;
 	@FindBy(xpath = "//strong[contains(text(),\"Hello, Indraganti sai srikar!\")]")
@@ -19,7 +19,7 @@ public class HomePage extends BasePage{
 	@FindBy(xpath = "//button[@class='button search-button']")
 	private WebElement clicksearch;
 
-	public HomePage(WebDriver driver) {
+	public Home(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}
@@ -40,7 +40,7 @@ public class HomePage extends BasePage{
 		return driver;
 	}
 
-	public String assert_login() {
+	public String getWelcomeMessage() {
 		return assertcheckBy.getText();
 
 	}
