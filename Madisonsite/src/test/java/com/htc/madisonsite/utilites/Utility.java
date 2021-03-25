@@ -1,5 +1,6 @@
 package com.htc.madisonsite.utilites;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.NoSuchElementException;
@@ -32,6 +33,13 @@ public class Utility {
 		} catch (NoSuchElementException no) {
 			no.printStackTrace();
 		}
+	}
+	
+	
+	
+	public static File creatingFile(String path) {
+		 File name=new File(path);
+		 return name;
 	}
 
 }

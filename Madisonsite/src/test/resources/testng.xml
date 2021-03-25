@@ -13,8 +13,8 @@
 		<classes>
 			           <!-- <class name="com.htc.madisonsite.tests.RegistrationTest"></class>   -->
 			              <class name="com.htc.madisonsite.tests.LoginTest"></class>  
-			    <!--     <class name="com.htc.madisonsite.tests.ProductPurchaseTest">  -->   
-			<!-- </class>  --> 
+		<!-- 	        <class name="com.htc.madisonsite.tests.ProductPurchaseTest">    
+			</class>  --> 
 		</classes>
 	</test>
 

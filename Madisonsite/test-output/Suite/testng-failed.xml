@@ -3,18 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
   <listeners>
-    <listener class-name="com.htc.madison.extentreport.Listeners"/>
+    <listener class-name="com.htc.madisonsite.utilites.Listeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.htc.madison.tests.ProductPurchaseTest">
+      <class name="com.htc.madisonsite.tests.ProductPurchaseTest">
         <methods>
-          <include name="Valid_And_Invalid_Login" invocation-numbers="0"/>
+          <include name="Valid_And_Invalid_Login" invocation-numbers="0 1"/>
           <include name="doLogout"/>
           <include name="browserSetup"/>
           <include name="start"/>
         </methods>
-      </class> <!-- com.htc.madison.tests.ProductPurchaseTest -->
+      </class> <!-- com.htc.madisonsite.tests.ProductPurchaseTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
