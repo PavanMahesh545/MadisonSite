@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class OrderConfirmation extends BasePage  {
 
-	@FindBy(xpath="//div[@class='page-title']")
+	@FindBy(xpath="(//h1[text() = \\\"Your order has been received.\\\"])")
 	private WebElement chechouttitle;
 	
 	public OrderConfirmation(WebDriver driver) {
