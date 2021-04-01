@@ -7,14 +7,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.htc.madisonsite.tests.ProductPurchaseTest">
+      <class name="com.htc.madisonsite.tests.LoginTest">
         <methods>
-          <include name="Valid_And_Invalid_Login" invocation-numbers="0 1"/>
           <include name="doLogout"/>
           <include name="browserSetup"/>
+          <include name="Valid_And_Invalid_Login" invocation-numbers="0"/>
           <include name="start"/>
         </methods>
-      </class> <!-- com.htc.madisonsite.tests.ProductPurchaseTest -->
+      </class> <!-- com.htc.madisonsite.tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
